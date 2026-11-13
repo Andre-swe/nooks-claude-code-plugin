@@ -1,0 +1,14 @@
+{
+  "name": "nooks",
+  "description": "The Nooks plugin for Claude Code.",
+  "owner": {
+    "name": "Nooks"
+  },
+  "plugins": [
+    {
+      "name": "nooks",
+      "source": "./",
+      "description": "Design a custom brick set with Nooks: real parts, a checked structure, revisions, a manual, a parts list and a BrickLink wanted list."
+    }
+  ]
+}

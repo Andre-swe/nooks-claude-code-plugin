@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nooks": {
+      "type": "http",
+      "url": "https://nooks.place/api/mcp-v2"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "nooks",
+  "displayName": "Nooks",
+  "description": "Design a custom brick set with Nooks: real parts, a checked structure, revisions, a manual, a parts list and a BrickLink wanted list.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Nooks",
+    "email": "hello@nooks.place",
+    "url": "https://nooks.place"
+  },
+  "homepage": "https://nooks.place/connect",
+  "repository": "https://github.com/Andre-swe/nooks-claude-code-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "bricks",
+    "mcp",
+    "claude-code",
+    "design",
+    "instructions"
+  ],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://nooks.place/developers",
+  "supportUrl": "https://nooks.place/connect",
+  "privacyPolicyUrl": "https://nooks.place/privacy",
+  "termsOfServiceUrl": "https://nooks.place/terms"
+}
