@@ -31,15 +31,16 @@ words for `record_source`.
    that before you ask to share.
 4. Call `find_parts` before guessing a part or a connector. Before each
    `build_program`, read `currentRevision` from `read_project` and pass it as
-   `baseRevision`. Place parts by pose or attach them by connector; every join
-   you claim is checked.
+   `baseRevision`. Use `null` only if the build has no revisions. Include the
+   `program` and a short `reason` for the revision history. Place parts by pose
+   or attach them by connector.
 5. Call `check_model` after each build and read the report it returns.
 6. `simulate_program` runs the two-second gravity simulation. `view` renders the
    build and gives an Exact PNG for a saved revision; download it and use `Read`
    if you need a file. Neither replaces `check_model`.
 7. When the model is right, call `finalize_model`, then `export_kit` for the
-   manual, parts list and BrickLink wanted list. Tell the person what the export
-   does not verify.
+   manual, parts list and BrickLink wanted list. Pass the same explicit saved
+   `revision` to both calls. Report any incomplete checks or unverified parts.
 
 ## Rules
 

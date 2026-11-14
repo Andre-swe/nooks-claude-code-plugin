@@ -70,12 +70,13 @@ Claude calls `runtime_guide` first, then works inside one build. If you gave a
 photo or words, it calls `record_source` before building. It finds parts with
 `find_parts`, builds with `build_program`, and checks with `check_model`.
 `simulate_program` runs the two-second gravity simulation; `view` renders the
-build. `finalize_model` finishes the model, and `export_kit` returns the manual,
-parts list and BrickLink wanted list.
+build. Pass the same saved `revision` to `finalize_model` and `export_kit` to
+check and export the manual, parts list and BrickLink wanted list.
 
 Before `build_program`, Claude reads `currentRevision` from `read_project` and
-passes it as `baseRevision`. A `409` means someone saved in between: read again
-and build on the latest. It passes `replaceHumanEdit: true` only when you ask.
+passes it as `baseRevision` with the `program` and a short `reason`. Use `null`
+only for a build with no revisions. On a `409`, read again and build on the
+latest revision. Claude passes `replaceHumanEdit: true` only when you ask.
 
 ## What it does not do
 
