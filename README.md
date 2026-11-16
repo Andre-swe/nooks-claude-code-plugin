@@ -11,8 +11,12 @@ Anthropic's plugin directory yet, and Anthropic has not reviewed or endorsed it.
 ## What it does
 
 - Connects Claude Code to the Nooks server over MCP, with OAuth sign-in.
-- Adds the `nooks-design` skill. It works inside one build: read the guide,
-  record the source, find parts, build, check, simulate, view, finalize, export.
+- Adds the `nooks-design` skill. It records the actual source photo, builds
+  with connectors, checks saved geometry and compares multiple views before
+  refining the largest mismatch. It tracks validity, alignment and design
+  quality separately and preserves the best valid revision and human edits.
+- Supports separate brick and Brain Flakes workflows. Brick physics,
+  finalization and exports apply only when supported for the selected system.
 - Lets you and Claude work on the same build. You can edit in the browser
   workbench; every save adds a revision and old revisions stay.
 
