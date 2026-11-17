@@ -60,9 +60,6 @@ claude mcp add --transport http --callback-port 8080 nooks https://nooks.place/a
 claude mcp login nooks
 ```
 
-Local loopback OAuth has been exercised. A repeat with a hosted Claude Code
-client in production is the remaining check.
-
 ## Images
 
 `view` renders the build. It returns an MCP image block and a `Full workbench`
