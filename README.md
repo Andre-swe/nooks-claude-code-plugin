@@ -7,6 +7,10 @@ and one skill that teaches the build loop.
 
 **Status:** public repository and the install path. The plugin is not listed in
 Anthropic's plugin directory yet, and Anthropic has not reviewed or endorsed it.
+The plugin is free; you sign in with your own Nooks account.
+
+Adding only the MCP server by hand (see [connector notes](docs/connector.md#claude-code))
+gives you the live tools and runtime guide, but not the bundled skill.
 
 ## What it does
 
@@ -94,20 +98,6 @@ latest revision. Claude passes `replaceHumanEdit: true` only when you ask.
 - It will not design sexual, hateful (including hate symbols), harassing, gory
   or demeaning content about a real person.
 
-## How it was tested
-
-- `node scripts/validate.mjs` passes in CI. It checks the files the plugin
-  directory checks: the manifest fields, the marketplace entry, `.mcp.json`, the
-  skill's front matter, the README length, the licence, `.gitattributes`, and
-  file sizes.
-- The MCP server, OAuth sign-in and the design loop were exercised from Codex
-  against the live Nooks server.
-- `claude plugin marketplace add` has **not** been run against this repository.
-  The Claude Code CLI was not installed on the machine that prepared it, so the
-  first person to install this plugin is the first to run that command. If it
-  fails, write to [hello@nooks.place](mailto:hello@nooks.place) with the command
-  and the output.
-
 ## Troubleshooting
 
 | Problem | What to do |
@@ -125,7 +115,6 @@ latest revision. Claude passes `replaceHumanEdit: true` only when you ask.
 - [Workbench](https://nooks.place/workbench)
 - [Workbench guide](https://nooks.place/workbench-guide)
 - [Developer docs](https://nooks.place/developers)
-- [llms.txt](https://nooks.place/llms.txt)
 - [Privacy](https://nooks.place/privacy)
 - [Terms](https://nooks.place/terms)
 - [Connector notes](docs/connector.md)
